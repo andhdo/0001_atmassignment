@@ -16,8 +16,19 @@ http://localhost:8080
 http://localhost:8080/api/<TODO>
   ```
 
+PACKAGING
+===========================================================
 
-
+# as a jar
+```
+gradle build -x test # skip tests temporary because context-camel injection problem
+java -jar build/libs/atm-0.0.1-SNAPSHOT.jar
+```
+# as a war
+```
+gradle war
+# resulting war at: build/libs/atm-0.0.1-SNAPSHOT.war
+```
 
 
 
